@@ -1,0 +1,12 @@
+{
+    "name": "pytorch scratchpad",
+    "image": "pytorch/pytorch",
+    "customizations": {
+        "settings": {
+            "terminal.integrated.shell.linux": "/bin/bash",
+            "extensions": ["ms-python.python", "ms-toolsai.jupyter"]
+        }
+    },
+    "postCreateCommand": "pip install -r requirements.txt jupyter",
+    "runArgs": ["--network", "host"]
+}
